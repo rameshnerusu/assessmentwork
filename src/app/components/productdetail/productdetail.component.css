@@ -1,0 +1,30 @@
+.card-img-top {
+  width: 300px;
+  height: 200px;
+}
+.card {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-color: red;
+  align-items: center;
+  padding-top: 20px;
+  margin-left: 200px;
+}
+.card-title {
+  color: aqua;
+}
+.card-text {
+  color: blue;
+}
+.productdetails {
+  color: red;
+  font-size: 30px;
+  margin-left: 80px;
+}
+.card-price {
+  color: red;
+}
+.card-rating {
+  color: yellowgreen;
+}

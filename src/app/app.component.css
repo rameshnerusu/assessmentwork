@@ -1,0 +1,19 @@
+.header {
+  background-color: dark;
+}
+.home {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+.productdetail {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin-left: 50px;
+}
+.cart {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}

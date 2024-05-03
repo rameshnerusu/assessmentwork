@@ -1,0 +1,7 @@
+<div class="container-fluid">
+  <ol>
+    <li *ngFor="let item of categories" class="categories">
+      <a routerLink="/products/{{ item }}">{{ item | uppercase }}</a>
+    </li>
+  </ol>
+</div>

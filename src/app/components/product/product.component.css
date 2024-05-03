@@ -1,0 +1,26 @@
+.card-container {
+  display: flex; /* Make the container a flex container */
+  flex-wrap: nowrap; /* Ensure items don't wrap to the next line */
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 auto; /* Let each card item shrink or grow based on content */
+  margin-right: 10px; /* Add some spacing between each card */
+  justify-content: center;
+  border: 2px solid red;
+  margin-top: 10px;
+}
+.card-title {
+  color: blue;
+  font-size: 30px;
+}
+.card-text {
+  color: blueviolet;
+  font-size: 20px;
+}
+.heading {
+  color: aqua;
+  font-size: 40px;
+}

@@ -1,0 +1,27 @@
+<!-- <div class="card d-flex justify-content-center">
+  <img [src]="products.image" class="card-img-top" alt="image" />
+  <div class="card-body">
+    <h5 class="card-title">{{ products.title | slice : 0 : 30 }}</h5>
+    <p class="card-text">{{ products.description | slice : 0 : 30 }}</p>
+    <a href="#" class="btn btn-primary">Add To Cart</a>
+  </div>
+</div> -->
+<h2 class="productdetails">product details:</h2>
+<div class="container">
+  <div class="card d-flex justify-content-center">
+    <img [src]="products.image" class="card-img-top" alt="image" />
+    <div class="card-body">
+      <h5 class="card-title">Title:{{ products.title | slice : 0 : 30 }}</h5>
+      <p class="card-text">
+        Description:{{ products.description | slice : 0 : 200 }}
+      </p>
+      <p class="card-price">Price:{{ products.price | currency : "INR" }}</p>
+      <p class="card-rating">
+        Rating:<i class="bi bi-star-fill"></i>{{ products.rating.rate }}
+      </p>
+      <button class="btn btn-primary" (click)="addtocart(products)">
+        {{ addToCartClicked ? "Go to Cart" : "Add to Cart" }}
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="conatiner-fluid">
+  <table class="table">
+    <thead>
+      <tr>
+        <td>S.NO</td>
+        <td>Product Name</td>
+        <td>Product image</td>
+        <td>Description</td>
+        <td>Price</td>
+
+        <td>Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.title | slice : 0 : 20 }}</td>
+        <td><img [src]="item.image" style="width: 100px; height: 100px" /></td>
+        <td>{{ item.description | slice : 0 : 30 }}</td>
+        <td>{{ item.price }}</td>
+
+        <td>
+          <button (click)="removeItem(item)" class="btn btn-danger">
+            <i class="bi bi-trash3-fill"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

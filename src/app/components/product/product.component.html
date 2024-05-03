@@ -1,0 +1,51 @@
+<h2 class="heading">{{ categoryName | titlecase }} Products</h2>
+<!-- <div class="d-flex flex-wrap">
+  <div class="m-3" *ngFor="let item of products">
+    <a>
+      <img
+        routerLink="/productdetail/{{ item.id }}"
+        [src]="item.image"
+        width="200"
+        height="200"
+      />
+    </a>
+    <h1>{{ item.title }}</h1>
+  </div>
+</div>
+<div></div> -->
+<!-- <div
+  class="card d-flex flex-row flex-wrap"
+  style="width: 18rem"
+  *ngFor="let item of products"
+>
+  <a
+    ><img [src]="item.image" class="card-img-top" width="200" height="200"
+  /></a>
+  <div class="card-body">
+    <h5 class="card-title">{{ item.title }}</h5>
+    <p class="card-text">{{ item.description }}</p>
+    <a routerLink="/productdetail/{{ item.id }}" class="btn btn-primary"
+      >See Product Details</a
+    >
+  </div>
+</div> -->
+<div class="card-container d-flex flex-row flex-wrap">
+  <div
+    class="card d-flex flex-row flex-wrap"
+    style="width: 25rem"
+    *ngFor="let item of products"
+  >
+    <a
+      ><img [src]="item.image" class="card-img-top" width="200" height="200"
+    /></a>
+    <div class="card-body">
+      <h5 class="card-title">{{ item.title | slice : 0 : 30 }}</h5>
+      <p class="card-text">{{ item.description | slice : 0 : 100 }}</p>
+      <a routerLink="/productdetail/{{ item.id }}" class="btn btn-primary"
+        >See Product Details</a
+      >
+    </div>
+  </div>
+</div>
+
+<a routerLink="/home">Back to Home</a>
